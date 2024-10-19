@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/shared";
 
 const App = () => {
   return (
@@ -6,11 +7,11 @@ const App = () => {
       <main className="font-onest ">
         <Routes>
           <Route path="" element={<Navbar />}>
-            <Route path="/" element={<Home />} />
+            {/* <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/SignUp" element={<SignUp />} />
-            <Route path="*" element={<Error />} />
+            <Route path="*" element={<Error />} /> */}
           </Route>
         </Routes>
       </main>
