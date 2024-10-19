@@ -46,7 +46,7 @@ export const Sort = () => {
           required
         />
         <div class="absolute inset-y-0 right-0 flex items-center">
-          <select class="sm:pr-0 sm:mr-1 h-full rounded-md border-0 bg-transparent md:pr-2  text-secondary text-xs outline-none md:mr-3">
+          <select class="sm:pr-0 sm:mr-1 h-full rounded-md border-0 bg-transparent md:pr-2  text-secondary text-xs outline-none md:mr-3 cursor-pointer">
             <option>Date modified</option>
             <option>00/00/0000</option>
             <option>00/00/0000</option>

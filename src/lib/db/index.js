@@ -46,28 +46,42 @@ export const socialIcon = [
   },
 ];
 
-export const problemSolutions = [
+export const disastersLocationsInfo = [
   {
-    image: "Img/problem.svg",
-    title: "Problem",
-    des1: "Managing legal documents can be complex, time-consuming, and error-prone.",
-    des2: "Outdated methods and manual processes put your business at risk",
+    image: "Img/disasters-location-img-1.png",
+    title: "Whitechapel Rd.",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
   {
-    image: "Img/solution.svg",
-    title: "Solution",
-    des1: "Ai GoverningDocs offers a cutting-edge solution to manage, generate, and automate legal documents with ease.",
-    des2: "Our AI-driven platform ensures compliance, reduces errors, and saves time.",
+    image: "Img/disasters-location-img-2.png",
+    title: "Whitechapel Rd.",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
   {
-    image: "Img/key-features.svg",
-    title: "Key Features",
-    des1: "Automatically generate legal documents tailored to your specific needs.",
+    image: "Img/disasters-location-img-3.png",
+    title: "Tulare County",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
   {
-    image: "Img/compliance-management.svg",
-    title: "Compliance Management",
-    des1: "Ensure all your documents meet the latest regulatory standards.",
+    image: "Img/disasters-location-img-4.png",
+    title: "Tulare County",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
+  },
+  {
+    image: "Img/disasters-location-img-5.png",
+    title: "Tulare County",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
+  },
+  {
+    image: "Img/disasters-location-img-6.png",
+    title: "Tulare County",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
 ];
 

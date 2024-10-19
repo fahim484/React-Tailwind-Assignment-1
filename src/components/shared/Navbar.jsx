@@ -22,7 +22,7 @@ export const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="py-2 sm:py-4 xl:py-[23px] relative bg-[#E4E4E780]">
+    <nav className="py-2 sm:py-4 xl:py-[23px] relative bg-[#E4E4E780] max-h-[191px]">
       <Container className="w-full max-w-screen-2xl mx-auto">
         <div className="flex justify-between items-center lg:gap-5 xl:gap-[30px] px-5 lg:px-14 xl:px-[85.5px]">
           <a href="/">
@@ -72,7 +72,7 @@ export const Navbar = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center lg:gap-5 xl:gap-[30px] px-5 lg:px-14 xl:px-[85.5px] pt-8">
           <div>
             <p className="text-secondary text-xs leading-[15.3px] text-center lg:text-start">Welcome back</p>
-            <h1 className="text-[#09090B] font-bold text-[26px] leading-[33.15px] pb-5">Dashboard</h1>
+            <h1 className="text-[#09090B] font-bold text-[26px] leading-[33.15px] pb-5 cursor-pointer">Dashboard</h1>
           </div>
           <div className="flex justify-center items-center gap-2 lg:gap-3 xl:gap-[14px]">
             <Input />
