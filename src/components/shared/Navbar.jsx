@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { NavItems } from "../common/NavItems";
 import { Bell } from "../Icon";
 import { Input, Sort } from "../common/Input";
+import { Outlet } from "react-router-dom";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // [0] useState
@@ -22,7 +23,7 @@ export const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="py-2 sm:py-4 xl:py-[23px] relative bg-[#E4E4E780] max-h-[191px]">
+    <nav className="py-2 sm:py-4 xl:py-[23px] relative bg-[#E4E4E780]">
       <Container className="w-full max-w-screen-2xl mx-auto">
         <div className="flex justify-between items-center lg:gap-5 xl:gap-[30px] px-5 lg:px-14 xl:px-[85.5px]">
           <a href="/">
@@ -84,6 +85,7 @@ export const Navbar = () => {
         {/* Scrollable Mobile Menu */}
         {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
       </Container>
+      <Outlet />
     </nav>
   );
 };

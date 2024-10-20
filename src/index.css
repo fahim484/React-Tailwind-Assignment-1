@@ -1,13 +1,15 @@
 /* Google Fonts(Onest): */
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent body scrolling when the mobile menu is open */
+.no-scroll {
+  overflow: hidden;
+}
 
-.active{
-    color: red;
+.active {
+  color: red;
 }

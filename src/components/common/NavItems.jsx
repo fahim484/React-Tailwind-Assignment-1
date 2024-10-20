@@ -1,5 +1,5 @@
 import { navItems } from "../../lib/db";
-import { NavLink, Outlet  } from "react-router-dom";
+import { NavLink  } from "react-router-dom";
 
 export const NavItems = () => {
   return (
@@ -11,8 +11,6 @@ export const NavItems = () => {
           </p>
         </NavLink>
       ))}
-
-      <Outlet />
     </div>
   );
 };
