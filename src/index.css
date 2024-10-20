@@ -11,5 +11,6 @@
 }
 
 .active {
-  color: red;
+  color: #09090B;
+  font-weight: 700;
 }

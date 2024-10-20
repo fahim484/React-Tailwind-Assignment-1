@@ -6,10 +6,10 @@ import { NavItems } from "../common/NavItems";
 import { Bell } from "../Icon";
 import { Input, Sort } from "../common/Input";
 import { Outlet } from "react-router-dom";
+import { cn } from "../../lib/utils/cn";
 
 export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // [0] useState
-  // const toggleMenus = () => setIsMenusOpen(!isMenusOpen);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   useEffect(() => {
@@ -22,9 +22,12 @@ export const Navbar = () => {
     return () => bodyClass.remove("no-scroll");
   }, [isMenuOpen]);
 
+  // navigation items indicator
+  const [active, setActive] = useState(0);
+
   return (
     <nav className="py-2 sm:py-4 xl:py-[23px] relative bg-[#E4E4E780]">
-      <Container className="w-full max-w-screen-2xl mx-auto">
+      <Container className="max-w-screen-2xl">
         <div className="flex justify-between items-center lg:gap-5 xl:gap-[30px] px-5 lg:px-14 xl:px-[85.5px]">
           <a href="/">
             <img src="Img/Navbar-Main-Logo.png" alt="" />
@@ -32,7 +35,10 @@ export const Navbar = () => {
 
           {/* Navigation items for large screens */}
           <div>
-            <NavItems />
+            <NavItems
+              active={active === true}
+              onClick={() => setActive(true)}
+            />
           </div>
           <div className="flex justify-center items-center gap-2.5">
             {/* Hamburger button for mobile */}
@@ -67,13 +73,29 @@ export const Navbar = () => {
           </div>
         </div>
 
-        {/* horizontal line and navigation items indicator */}
-        <div className="text-[#E4E4E7] border-t-[1px] mt-2 md:mt-3 lg:mt-[15px]"></div>
+        {/* navigation items indicator */}
+        <div className="text-[#E4E4E7] border-b-[1px] mt-2 md:mt-3 lg:mt-[15px]">
+        <div className="hidden lg:flex justify-center items-center lg:gap-4 xl:gap-[38px]">
+            {Array.from(Array(6).keys()).map((el) => (
+              <div
+                key={el}
+                className={cn(
+                  "h-[3px] w-[95px] bg-accent rounded-[10px]",
+                  active !== el && "bg-transparent"
+                )}
+              />
+            ))}
+          </div>
+        </div>
 
         <div className="flex flex-col lg:flex-row justify-between items-center lg:gap-5 xl:gap-[30px] px-5 lg:px-14 xl:px-[85.5px] pt-8">
           <div>
-            <p className="text-secondary text-xs leading-[15.3px] text-center lg:text-start">Welcome back</p>
-            <h1 className="text-[#09090B] font-bold text-[26px] leading-[33.15px] pb-5 cursor-pointer">Dashboard</h1>
+            <p className="text-secondary text-xs leading-[15.3px] text-center lg:text-start">
+              Welcome back
+            </p>
+            <h1 className="text-[#09090B] font-bold text-[26px] leading-[33.15px] pb-5 cursor-pointer">
+              Dashboard
+            </h1>
           </div>
           <div className="flex justify-center items-center gap-2 lg:gap-3 xl:gap-[14px]">
             <Input />

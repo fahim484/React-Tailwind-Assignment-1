@@ -2,7 +2,7 @@
 export const navItems = [
   {
     label: "Dashboard",
-    link: "/Dashboard",
+    link: "/",
   },
   {
     label: "Incidents",
@@ -23,26 +23,6 @@ export const navItems = [
   {
     label: "Cypher AI",
     link: "/CypherAI",
-  },
-];
-
-
-export const socialIcon = [
-  {
-    img: "Img/fb.png",
-    url: "https://www.facebook.com",
-  },
-  {
-    img: "Img/insta.png",
-    url: "https://www.instagram.com",
-  },
-  {
-    img: "Img/in.png",
-    url: "https://www.linkedin.com",
-  },
-  {
-    img: "Img/x.png",
-    url: "https://www.x.com",
   },
 ];
 
@@ -82,6 +62,25 @@ export const disastersLocationsInfo = [
     title: "Tulare County",
     address: "Tulare County,  Los Angles, CA 23415",
     money: "$1,456,654.00",
+  },
+];
+
+export const socialIcon = [
+  {
+    img: "Img/fb.png",
+    url: "https://www.facebook.com",
+  },
+  {
+    img: "Img/insta.png",
+    url: "https://www.instagram.com",
+  },
+  {
+    img: "Img/in.png",
+    url: "https://www.linkedin.com",
+  },
+  {
+    img: "Img/x.png",
+    url: "https://www.x.com",
   },
 ];
 
