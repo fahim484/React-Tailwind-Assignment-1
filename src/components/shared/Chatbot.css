@@ -1,0 +1,36 @@
+
+/* Chat Window Background */
+.rsc-container {
+  background-color: #F4F4F5 !important; /* Background of the chat window */
+}
+
+/* Chat Header */
+.rsc-header {
+  background-color: #F26922 !important; /* Background color of the header */
+  color: #FAFAFA !important; /* Font color of the header text */
+  font-size: 18px !important; /* Font size of the header text */
+  font-weight: bold !important; /* Font weight of the header text */
+  padding: 25px 15px !important; /* Padding inside the header */
+  border-bottom: 2px solid #ddd !important; /* Border below the header */
+  line-height: 22.95px !important; /* Line height of the header text */
+}
+
+.rsc-content .rsc-bot {
+    background-color: green !important;  /* Custom background color for bot messages */
+    color: green !important;  /* Custom text color for bot messages */
+  }
+
+/* Chat Input Box (where the user types) */
+.rsc-input {
+  background-color: #F3F4F6 !important; /* Background of the input box */
+  border-top: 2px solid #F26922 !important; /* Border at the top of the input area */
+  padding: 8px !important; /* Padding inside the input box */
+  color: #71717A !important; /* Text color in the input area */
+}
+
+  
+  /* Input submit button icon */
+  .rsc-submit-button svg {
+    fill: #F26922!important;  /* Changes the color of the icon inside the submit button */
+    cursor: pointer;
+  }

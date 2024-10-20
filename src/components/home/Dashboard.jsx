@@ -1,6 +1,7 @@
 import { Container } from "../common/Container";
 import { disastersLocationsInfo } from "../../lib/db";
 import { Card } from "./Card";
+import { Chatbot } from "../shared/Chatbot";
 
 export const Dashboard = () => {
   return (
@@ -11,6 +12,7 @@ export const Dashboard = () => {
             <Card key={i} {...card} />
           ))}
         </div>
+        <Chatbot />
       </Container>
     </section>
   );
