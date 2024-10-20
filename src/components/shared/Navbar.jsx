@@ -5,12 +5,28 @@ import { useEffect, useState } from "react";
 import { NavItems } from "../common/NavItems";
 import { Bell } from "../Icon";
 import { Input, Sort } from "../common/Input";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { cn } from "../../lib/utils/cn";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
+  // navigation items indicator
+  const location = useLocation(); // Get the current route location
+  const [active, setActive] = useState(0); // Manage active state for nav items
+
+  // Update active state based on the current path
+  useEffect(() => {
+    const pathToIndexMap = {
+      "/": 0,
+      "/dashboard": 1,
+      "/incidents": 2,
+      "/locations": 3,
+    };
+    const currentPath = location.pathname;
+    setActive(pathToIndexMap[currentPath] ?? 0); // Set to 0 if path not found
+  }, [location.pathname]);
 
   useEffect(() => {
     // Add or remove the 'no-scroll' class to the body to prevent background scrolling
@@ -22,9 +38,6 @@ export const Navbar = () => {
     return () => bodyClass.remove("no-scroll");
   }, [isMenuOpen]);
 
-  // navigation items indicator
-  const [active, setActive] = useState(0);
-
   return (
     <nav className="py-2 sm:py-4 xl:py-[23px] relative bg-[#E4E4E780]">
       <Container className="max-w-screen-2xl">
@@ -35,10 +48,7 @@ export const Navbar = () => {
 
           {/* Navigation items for large screens */}
           <div>
-            <NavItems
-              active={active === true}
-              onClick={() => setActive(true)}
-            />
+            <NavItems active={active} setActive={setActive} />
           </div>
           <div className="flex justify-center items-center gap-2.5">
             {/* Hamburger button for mobile */}
@@ -75,13 +85,13 @@ export const Navbar = () => {
 
         {/* navigation items indicator */}
         <div className="text-[#E4E4E7] border-b-[1px] mt-2 md:mt-3 lg:mt-[15px]">
-        <div className="hidden lg:flex justify-center items-center lg:gap-4 xl:gap-[38px]">
-            {Array.from(Array(6).keys()).map((el) => (
+          <div className="hidden lg:flex justify-center items-center lg:gap-4 xl:gap-[35px]">
+            {Array.from(Array(6).keys()).map((el, index) => (
               <div
                 key={el}
                 className={cn(
                   "h-[3px] w-[95px] bg-accent rounded-[10px]",
-                  active !== el && "bg-transparent"
+                  active !== index && "bg-transparent"
                 )}
               />
             ))}
