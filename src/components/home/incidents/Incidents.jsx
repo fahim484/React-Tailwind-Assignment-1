@@ -1,6 +1,6 @@
-import { Container } from "../common/Container";
-import { disastersLocationsInfo } from "../../lib/db";
-import { Card } from "./Card";
+import { Container } from "../../common/Container";
+import { disastersLocationsInfo } from "../../../lib/db";
+import { Card } from "../Card";
 
 export const Incidents = () => {
   return (

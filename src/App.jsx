@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/shared";
-import { Dashboard } from "./components/home";
-import { Incidents } from "./components/home/Incidents";
+import { Dashboard, Locations } from "./components/home";
+import { Incidents } from "./components/home/incidents/Incidents";
 
 const App = () => {
   return (
@@ -11,8 +11,8 @@ const App = () => {
           <Route path="" element={<Navbar />}>
             <Route path="/" element={<Dashboard />} />
             <Route path="/Incidents" element={<Incidents />} />
-            {/* <Route path="/Contact" element={<Contact />} />
-            <Route path="/SignUp" element={<SignUp />} />
+            <Route path="/Locations" element={<Locations />} />
+            {/* <Route path="/SignUp" element={<SignUp />} />
             <Route path="*" element={<Error />} /> */}
           </Route>
         </Routes>

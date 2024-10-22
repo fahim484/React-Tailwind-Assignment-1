@@ -65,26 +65,81 @@ export const disastersLocationsInfo = [
   },
 ];
 
-export const socialIcon = [
+export const locationsInfo = [
   {
-    img: "Img/fb.png",
-    url: "https://www.facebook.com",
+    image: "Img/location-img-1.png",
+    title: "Whitechapel Rd.",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
   {
-    img: "Img/insta.png",
-    url: "https://www.instagram.com",
+    image: "Img/location-img-2.png",
+    title: "Whitechapel Rd.",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
   {
-    img: "Img/in.png",
-    url: "https://www.linkedin.com",
+    image: "Img/location-img-1.png",
+    title: "Tulare County",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
   {
-    img: "Img/x.png",
-    url: "https://www.x.com",
+    image: "Img/location-img-1.png",
+    title: "Tulare County",
+    address: "Tulare County,  Los Angles, CA 23415",
+    money: "$1,456,654.00",
   },
 ];
 
-export const reviews = [
+export const locationsInfoCardAddress = [
+      {
+        image: "Img/locations-card-location-icon.png",
+        title: "Location",
+        address: "Tulare County,  Los Angles, CA 23415",
+      },
+      {
+        image: "Img/locations-card-cost-icon.png",
+        title: "Approx. Cost:",
+        amount: "$60,607,456.00"
+      }
+    
+];
+
+export const locationsInfoCardActivities = [
+    {
+      image: "Img/locations-card-img.png",
+      title: "Activity name",
+      address: "Location name . 16.12212, -122.1424",
+      money: "$1,456,654.00"
+    },
+    {
+      image: "Img/locations-card-img.png",
+      title: "Activity name",
+      address: "Location name . 16.12212, -122.1424",
+      money: "$1,456,654.00"
+    },
+    
+];
+
+export const locationsInfoCardDocuments = [
+    {
+      image: "Img/locations-card-img.png",
+      title: "Document name",
+      address: "Location name . 16.12212, -122.1424",
+      money: "$1,456,654.00"
+    },
+    {
+      image: "Img/locations-card-img.png",
+      title: "Document name",
+      address: "Location name . 16.12212, -122.1424",
+      money: "$1,456,654.00"
+    }
+    
+];
+
+
+export const locations = [
   {
     name: "David",
     image: "Img/david.png",
@@ -117,6 +172,27 @@ export const reviews = [
     },
   },
 ];
+
+export const socialIcon = [
+  {
+    img: "Img/fb.png",
+    url: "https://www.facebook.com",
+  },
+  {
+    img: "Img/insta.png",
+    url: "https://www.instagram.com",
+  },
+  {
+    img: "Img/in.png",
+    url: "https://www.linkedin.com",
+  },
+  {
+    img: "Img/x.png",
+    url: "https://www.x.com",
+  },
+];
+
+
 
 export const partners = [
   {

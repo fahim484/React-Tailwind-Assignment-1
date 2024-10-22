@@ -1,6 +1,8 @@
+import { cn } from "../../lib/utils/cn";
+
 /* eslint-disable react/prop-types */
-export const Card = ({ image, title, address, money }) => (
-  <div className=" w-[306px] h-[337px] pt-5 group">
+export const Card = ({ image, title, address, money, className }) => (
+  <div className={cn("w-[306px] h-[337px] pt-5 group", className)}>
     <img src={image} alt={title} className="cursor-pointer" />
     <h1 className="font-bold group-hover:text-gray-400 text-base leading-[30px] text-[#09090B] cursor-pointer">
       {title}
