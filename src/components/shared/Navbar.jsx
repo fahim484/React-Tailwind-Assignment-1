@@ -71,7 +71,7 @@ export const Navbar = () => {
                 alt="Profile Avatar"
                 className="cursor-pointer"
               />
-              <div className="text-secondary">
+              <div className="text-secondary hidden sm:block">
                 <h2 className="font-semibold text-base leading-[20.4px]">
                   Usman Zafar
                 </h2>
@@ -107,7 +107,8 @@ export const Navbar = () => {
               Dashboard
             </h1>
           </div>
-          <div className="flex justify-center items-center gap-2 lg:gap-3 xl:gap-[14px]">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 lg:gap-3 xl:gap-[14px]
+             sm:px-0">
             <Input />
             <Sort />
             <Button>Cypher AI</Button>
