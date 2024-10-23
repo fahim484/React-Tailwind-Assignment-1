@@ -1,10 +1,8 @@
 import { Container } from "../common/Container";
-import { Button } from "../common/Button";
 import { MobileMenu } from "./MobileMenu";
 import { useEffect, useState } from "react";
 import { NavItems } from "../common/NavItems";
 import { Bell } from "../Icon";
-import { Input, Sort } from "../common/Input";
 import { Outlet, useLocation } from "react-router-dom";
 import { cn } from "../../lib/utils/cn";
 
@@ -98,22 +96,7 @@ export const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:gap-5 xl:gap-[30px] px-5 lg:px-14 xl:px-[85.5px] pt-8">
-          <div>
-            <p className="text-secondary text-xs leading-[15.3px] text-center lg:text-start">
-              Welcome back
-            </p>
-            <h1 className="text-[#09090B] font-bold text-[26px] leading-[33.15px] pb-5 cursor-pointer">
-              Dashboard
-            </h1>
-          </div>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 lg:gap-3 xl:gap-[14px]
-             sm:px-0">
-            <Input />
-            <Sort />
-            <Button>Cypher AI</Button>
-          </div>
-        </div>
+        
 
         {/* Scrollable Mobile Menu */}
         {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />}
