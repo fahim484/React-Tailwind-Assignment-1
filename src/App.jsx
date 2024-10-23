@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/shared";
 import { Dashboard, Locations } from "./components/home";
 import { Incidents } from "./components/home/incidents/Incidents";
+import Error from "./components/error/Error";
 
 const App = () => {
   return (
@@ -12,8 +13,7 @@ const App = () => {
             <Route path="/" element={<Dashboard />} />
             <Route path="/Incidents" element={<Incidents />} />
             <Route path="/Locations" element={<Locations />} />
-            {/* <Route path="/SignUp" element={<SignUp />} />
-            <Route path="*" element={<Error />} /> */}
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </main>

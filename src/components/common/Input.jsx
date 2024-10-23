@@ -1,6 +1,6 @@
 export const Input = () => {
   return (
-    <form>
+    <form className="w-screen sm:w-fit">
       <div class="relative">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
           <svg
@@ -22,7 +22,7 @@ export const Input = () => {
         <input
           type="search"
           id="search"
-          className="p-3 ps-7 pe-0 outline-primary block w-[290px] sm:w-full sm:p-[17px] sm:ps-10 text-secondary border border-[#E4E4E7] rounded-md bg-white text-xs md:text-sm leading-[15.3px]"
+          className="block sm:w-[190px] w-full p-3 ps-7 pe-0 outline-primary sm:p-[17px] sm:ps-10 text-secondary border border-[#E4E4E7] rounded-md bg-white text-xs md:text-sm leading-[15.3px]"
           placeholder="Search incident"
           required
         />
@@ -33,7 +33,7 @@ export const Input = () => {
 
 export const Sort = () => {
   return (
-    <form>
+    <form className="w-screen sm:w-fit">
       <div class="relative">
         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
           <span class="text-[#A1A1AA] text-xs">Sort By:</span>
@@ -41,7 +41,7 @@ export const Sort = () => {
         <input
           type="search"
           id="search"
-          className="py-3 block w-[290px] sm:w-full sm:py-[17px] px-8 sm:px-1 text-secondary border border-[#E4E4E7] rounded-md bg-white text-xs md:text-sm leading-[15.3px]"
+          className="py-3 block w-full sm:py-[17px] px-8 sm:px-1 text-secondary border border-[#E4E4E7] rounded-md bg-white text-xs md:text-sm leading-[15.3px]"
           placeholder=""
           required
         />
