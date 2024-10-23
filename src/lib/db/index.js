@@ -93,52 +93,66 @@ export const locationsInfo = [
 ];
 
 export const locationsInfoCardAddress = [
-      {
-        image: "Img/locations-card-location-icon.png",
-        title: "Location",
-        address: "Tulare County,  Los Angles, CA 23415",
-      },
-      {
-        image: "Img/locations-card-cost-icon.png",
-        title: "Approx. Cost:",
-        amount: "$60,607,456.00"
-      }
-    
+  {
+    image: "Img/locations-card-location-icon.png",
+    title: "Location",
+    address: "Tulare County,  Los Angles, CA 23415",
+  },
+  {
+    image: "Img/locations-card-cost-icon.png",
+    title: "Approx. Cost:",
+    amount: "$60,607,456.00",
+  },
 ];
 
 export const locationsInfoCardActivities = [
-    {
-      image: "Img/locations-card-img.png",
-      title: "Activity name",
-      address: "Location name . 16.12212, -122.1424",
-      money: "$1,456,654.00"
-    },
-    {
-      image: "Img/locations-card-img.png",
-      title: "Activity name",
-      address: "Location name . 16.12212, -122.1424",
-      money: "$1,456,654.00"
-    },
-    
+  {
+    image: "Img/locations-card-img.png",
+    title: "Activity name",
+    address: "Location name . 16.12212, -122.1424",
+    money: "$1,456,654.00",
+  },
+  {
+    image: "Img/locations-card-img.png",
+    title: "Activity name",
+    address: "Location name . 16.12212, -122.1424",
+    money: "$1,456,654.00",
+  },
 ];
 
 export const locationsInfoCardDocuments = [
-    {
-      image: "Img/locations-card-img.png",
-      title: "Document name",
-      address: "Location name . 16.12212, -122.1424",
-      money: "$1,456,654.00"
-    },
-    {
-      image: "Img/locations-card-img.png",
-      title: "Document name",
-      address: "Location name . 16.12212, -122.1424",
-      money: "$1,456,654.00"
-    }
-    
+  {
+    image: "Img/locations-card-img.png",
+    title: "Document name",
+    address: "Location name . 16.12212, -122.1424",
+    money: "$1,456,654.00",
+  },
+  {
+    image: "Img/locations-card-img.png",
+    title: "Document name",
+    address: "Location name . 16.12212, -122.1424",
+    money: "$1,456,654.00",
+  },
+];
+export const incidentsFirstPageCard = [
+  {
+    image: "Img/incidents-first-page-card-1.png",
+    title: "What type of incident?",
+    description: "Choose the category that best describes the incident.",
+  },
+  {
+    image: "Img/incidents-first-page-card-2.png",
+    title: "Tell us about the incident?",
+    description: "Let’s connect the dots and see where to start.",
+  },
+  {
+    image: "Img/incidents-first-page-card-3.png",
+    title: "Where did the incident occur?",
+    description: "Lorem ipsum dolar sit general sac mascho werho",
+  },
 ];
 
-
+// -----------------------------------------------------------------
 export const locations = [
   {
     name: "David",
@@ -192,8 +206,6 @@ export const socialIcon = [
   },
 ];
 
-
-
 export const partners = [
   {
     src: "Img/partners-1.png",
@@ -224,14 +236,17 @@ export const partners = [
 export const faqs = [
   {
     q: "Is my data secure?",
-    a: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
+    a:
+      "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
   },
   {
     q: "What types of documents can Ai GoverningDocs generate?",
-    a: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
+    a:
+      "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
   },
   {
     q: "Can I customize the documents?",
-    a: "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
+    a:
+      "We cover a wide range of documents, including contracts, NDAs, compliance reports, and more. ",
   },
 ];

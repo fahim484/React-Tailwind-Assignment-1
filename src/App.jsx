@@ -3,6 +3,7 @@ import { Navbar } from "./components/shared";
 import { Dashboard, Locations } from "./components/home";
 import { Incidents } from "./components/home/incidents/Incidents";
 import Error from "./components/error/Error";
+import { IncidentsFirstPage } from "./components/home/incidents/IncidentsFirstPage";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
             <Route path="/" element={<Dashboard />} />
             <Route path="/Incidents" element={<Incidents />} />
             <Route path="/Locations" element={<Locations />} />
+            <Route path="/new-incident" element={<IncidentsFirstPage />} />
             <Route path="*" element={<Error />} />
           </Route>
         </Routes>
